@@ -1,0 +1,85 @@
+.section-prices {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    padding-top: 74px;
+    padding-bottom: 74px;
+
+    background-color: #49c38f;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @media (min-width: 768px){
+        padding-bottom: 80px;
+        background-color: #60666a;
+        background-image: url("../img/section-prices/section-prices-bg.jpg");
+
+        &::before{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            background-color:  rgba(0, 0, 0, 0.5) ;
+        }   
+    }
+    
+    @media (min-width: 1200px){
+        padding-top: 108px;
+        padding-bottom: 89px;
+    }   
+}
+
+.section-prices__content{
+    position: relative;
+}
+
+.section-prices__title {
+    margin-bottom: 33px;
+    text-align: center;
+
+    @media (min-width: 768px){
+        margin-bottom: 31px;
+    }
+
+    @media (min-width: 1200px){
+        margin-bottom: 72px;
+    }
+
+}
+
+.section-prices__header {
+    margin-bottom: 42px;
+    text-align: center;
+
+    @media (min-width: 768px){
+        margin-bottom: 62px;
+    }
+
+    @media (min-width: 1200px){
+        margin-bottom: 78px;
+    }
+}
+
+.section-header--white {
+    color: #ffffff;
+}
+
+.section-prices__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px){
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
